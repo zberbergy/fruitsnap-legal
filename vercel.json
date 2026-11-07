@@ -1,0 +1,23 @@
+{
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/app-ads.txt",
+      "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }]
+    },
+    {
+      "source": "/ads.txt",
+      "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }]
+    }
+  ],
+  "redirects": [
+    { "source": "/privacy-policy", "destination": "/privacy", "permanent": true },
+    { "source": "/terms-of-use", "destination": "/terms", "permanent": true },
+    { "source": "/contact", "destination": "/support", "permanent": true },
+    {
+      "source": "/terms",
+      "destination": "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      "permanent": false
+    }
+  ]
+}
